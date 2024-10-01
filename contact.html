@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+  <link href="css/navbar.css" rel="stylesheet" />
+  <link href="css/section.css" rel="stylesheet" />
+  <link href="css/article.css" rel="stylesheet" />
+  <link href="images/trishokalogonobg.png" rel="favicon" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>TRISHOKA Digital Services</title>
+  <style>
+    .project-name {
+      position: relative;
+      color: black;
+      transition: all 0.3s ease;
+      /* Smooth transition */
+    }
+
+    .project-name::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      /* Position of underline */
+      left: 0;
+      background-color: orange;
+      /* Underline color */
+      transition: width 0.3s ease;
+      /* Smooth underline effect */
+    }
+
+    .project-name:hover::after {
+      width: 100%;
+      /* Full-width underline on hover */
+    }
+
+    .partnership {
+      width: 100%;
+      height: 300px;
+    }
+
+    .section {
+      height: 400px;
+      width: auto;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .nav-item {
+        margin-bottom: 10px;
+      }
+    }
+
+    .project-card {
+      opacity: 0;
+      /* Initially invisible */
+      transform: translateY(20px);
+      /* Slightly shifted down */
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+      /* Ease-in-out transition */
+    }
+
+    .project-card img {
+      transition: transform 0.4s ease-in-out;
+      /* Smooth transition on hover */
+    }
+
+    .project-card :hover {
+      transform: scale(1.1);
+      /* Zoom in effect */
+    }
+
+    .project-card img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      /* Ensures image fits within bounds */
+    }
+
+    .project-card:hover {
+      transform: scale(1.1);
+      /* Zoom effect on hover */
+    }
+
+    .location-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+
+    }
+
+    .location-img {
+      width: 361px;
+      height: 434px;
+      height: auto;
+      /* border-radius: 15px; Border radius applied */
+      transition: transform 0.5s ease-in-out;
+      margin-left: 200px;
+      margin-left: 16px;
+      margin-top: 35px;
+    }
+
+    .location-img:hover {
+      transform: scale(1.05);
+      /* Slight scaling effect on hover */
+    }
+
+    .location-info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 25px;
+      width: 361px;
+      height: 434px;
+      text-align: center;
+      /* border-radius: 10px; */
+    }
+
+    .img-wrapper {
+      position: relative;
+      width: 400px;
+      /* Fixed width */
+      height: 500px;
+      /* Fixed height */
+    }
+
+    .img-wrapper:hover .location-info {
+      opacity: 1;
+      /* Show location info on hover */
+    }
+
+    @media (max-width: 768px) {
+      .location-container {
+        flex-direction: column;
+      }
+
+      .img-wrapper {
+        width: 100%;
+        /* Make image responsive on small screens */
+        height: auto;
+      }
+    }
+
+    p {
+      color: rgb(232, 232, 232);
+    }
+  </style>
+</head>
+
+<body style="font-family: Georgia, 'Times New Roman', Times, serif;">
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid" style="margin-bottom: 20px;">
+      <a class="navbar-brand" href="navbar.html"><img src="images/trishokalogonobg.png" width="70px" /></a>
+      <div class="text-center navbar-text">
+        <h1 class="mb-2">TRISHOKA</h1>
+        <p class="mb-0">Digital Services</p>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="margin-left:10%;">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: whitesmoke;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partnerships.html">Partnership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Blog.html">Blogs</a>
+          </li>
+          <!-- <li class="nav-item">
+                <a class="nav-link" href="culture.html">Culture</a>
+              </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="careers.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div>
+    <div>
+      <h1 style="
+background-image: url(images/contact1.png);
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: #B87333;
+      font-size: 2em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      padding-left: 20px;
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+  ">
+        How can we help you?
+        <button type="button"
+          style="margin-top: 10%; margin-left: -17%; border: none; background-color: rgb(75, 180, 221); padding: 10px; font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif; border-radius: 5px; color: white;"
+          data-toggle="modal" data-target="#contactModal">
+          Contact Us
+        </button>
+      </h1>
+      <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+        aria-hidden="true" style="margin-top: 10%;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <u style="color: #B87333;">
+              <h5 class="modal-title" id="contactModalLabel"
+                style="color: #B87333;text-align: center;padding-top: 10px; font-family: Georgia, 'Times New Roman', Times, serif;">
+                Reach Out Our Team</h5>
+            </u>
+
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+              style="border: none;background-color: white;color: black;width: 25px;height: 25px;margin-left: 90%;margin-top: -20px;">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="modal-body">
+              <!-- Form inside Modal -->
+              <form>
+                <div class="form-group">
+                  <label for="name" style="color: black;">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group" style="margin-top: 10px;font-family: Georgia, 'Times New Roman', Times, serif;">
+                  <label for="email" style="color: black;">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group" style="margin-top: 10px;font-family: Georgia, 'Times New Roman', Times, serif;">
+                  <label for="number" style="color: black;"> Phone Number</label>
+                  <input type="number" class="form-control" id="number" placeholder="Enter Mobile Number" required>
+                </div>
+                <button type="submit" class="btn"
+                  style="margin-top: 20px; margin-left:40%; background-color: rgb(68, 164, 201);color: white;"
+                  data-dismiss="modal">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="container text-center d-flex flex-column align-items-center justify-content-center">
+          <h1 class="mb-4"
+            style="color:#B87333;font-family: 'Times New Roman', Times, serif;text-decoration: underline;">We Are
+            Looking
+            for</h1>
+          <span class="text-muted px-3" style="max-width:100%;font-family: 'Times New Roman', Times, serif;">
+            We are happy to assist you in providing comprehensive services, a dedicated team of professionals who are
+            committed to going the extra mile for you, around the clock, to enhance your experience with unwavering
+            efficiency.
+          </span>
+        </div>
+
+        <div class="col-md-4 mb-4" style="margin-top: 50px;">
+          <div class="d-flex flex-column align-items-center justify-content-center p-4 shadow rounded-lg project-card"
+            id="card1">
+            <h6 class="project-name mb-3" style="font-family: 'Times New Roman', Times, serif;">Sri SVS Pearls &
+              Jewellers</h6>
+            <img class="img-fluid" src="images/svslogo.jpg" alt="Sri SVS Pearls & Jewellers">
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" style="margin-top: 50px;">
+          <div class="d-flex flex-column align-items-center justify-content-center p-4 shadow rounded-lg project-card"
+            id="card2">
+            <h6 class="project-name" style="font-family: 'Times New Roman', Times, serif;">Bhonchesara</h6>
+            <img src="images/bhonchesara.webp" class="img-fluid" alt="Bhonchesara">
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" style="margin-top: 50px;">
+          <div class="d-flex flex-column align-items-center justify-content-center p-4 shadow rounded-lg project-card"
+            id="card3">
+            <h6 class="project-name" style="font-family: 'Times New Roman', Times, serif;">Team 9 Infra</h6>
+            <img src="images/team9logo.jpg" class="img-fluid" alt="Team 9 Infra">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1
+        style="font-family: 'Times New Roman', Times, serif;color:#B87333;font-size: 40px;text-align: center;text-decoration: underline;"
+        class="Location-text">Location</h1>
+      <div class="container location-container shadow" style="margin-bottom: 20px;width: 420px;">
+
+        <!-- Image Section with Hover Effect -->
+        <div class="col-md-6 img-wrapper">
+          <img
+            src="https://thumbs.dreamstime.com/b/famous-hyderabad-landmark-charminar-india-world-built-quli-qutb-shah-th-century-128124667.jpg"
+            alt="Charminar" class="location-img">
+          <div class="location-info">
+            <h2 style="font-family: 'Times New Roman', Times, serif;">TRISHOKA DIGITAL SERVICES</h2>
+            <p style="font-family: 'Times New Roman', Times, serif;">Off. No: 1014, 10th Floor, Prajay Princeton
+              Towers, Saroornagar, Doctors Colony, Opp NTR Market, L.B. Nagar, Hyderabad - 500074</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <footer class="text-light py-4 w-100" style="background-color:#B87333; margin-top: 20px;height: 187px;">
+    <div class="container">
+      <div class="row">
+        <!-- About Company -->
+        <div class="col-md-3 col-sm-6 footer-col">
+          <h5 class="project-name"
+            style="color:rgb(60, 56, 56);; font-family: Georgia, 'Times New Roman', Times, serif;">Company</h5>
+          <p style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">TRISHOKA <br> Digital
+            Services</p>
+        </div>
+
+        <!-- Services Section -->
+        <div class="col-md-3 col-sm-6 footer-col" style="line-height: 2rem;">
+          <h5 class="project-name"
+            style="color:rgb(60, 56, 56);; font-family: Georgia, 'Times New Roman', Times, serif;">Our Services</h5>
+          <span style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">Web
+            Development</span><br>
+          <span style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">Mobile App
+            Development</span><br>
+          <span style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">Digital
+            Marketing</span>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="col-md-3 col-sm-6 footer-col">
+          <h5 class="project-name"
+            style="color:rgb(60, 56, 56); font-family: Georgia, 'Times New Roman', Times, serif;">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;"><strong
+                style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">Email:</strong>
+              trishokadigiservices@gmail.com</li>
+            <li style="color: whitesmoke;"><strong
+                style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">Phone:</strong>+91
+              95505 90693</li>
+          </ul>
+        </div>
+
+        <!-- Address -->
+        <div class="col-md-3 col-sm-6 footer-col">
+          <h5 class="project-name"
+            style="color:rgb(60, 56, 56); font-family: Georgia, 'Times New Roman', Times, serif;">Address</h5>
+          <address style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">
+            Off. No: 1014, 10th Floor, Prajay Princeton
+            Towers,<br>
+            Saroornagar, L.B. Nagar, Hyderabad - 500074
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    // Function to apply transition effects after a delay
+    function showCards() {
+      setTimeout(() => {
+        document.getElementById('card1').style.opacity = 1;
+        document.getElementById('card1').style.transform = 'translateY(0)';
+      }, 500); // Delay for the first card
+
+      setTimeout(() => {
+        document.getElementById('card2').style.opacity = 1;
+        document.getElementById('card2').style.transform = 'translateY(0)';
+      }, 1000); // Delay for the second card
+
+      setTimeout(() => {
+        document.getElementById('card3').style.opacity = 1;
+        document.getElementById('card3').style.transform = 'translateY(0)';
+      }, 1500); // Delay for the third card
+    }
+
+    // Call the function once the window loads
+    window.onload = showCards;
+
+    window.addEventListener('load', function () {
+      // Move the navbar into view from the top
+      document.querySelector('.navbar').style.top = '0';
+    });
+
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

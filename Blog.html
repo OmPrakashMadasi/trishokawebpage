@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+  <link href="css/navbar.css" rel="stylesheet" />
+  <link href="css/section.css" rel="stylesheet" />
+  <link href="css/article.css" rel="stylesheet" />
+  <link href="images/trishokalogonobg.png" rel="favicon" />
+  <title>TRISHOKA Digital Services</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    /* navbar css */
+
+    a {
+      text-decoration: none;
+      color: rgb(95, 95, 95);
+    }
+
+
+
+
+    
+
+    p {
+      color: rgb(232, 232, 232);
+    }
+
+    .partnership-container {
+      position: relative;
+      background-image: url(images/blogblogblog.jpeg);
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      /* Adjust height as needed */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:#553619;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      /* text-align: center; */
+
+    }
+
+    /* Optional: Make the font-size responsive for smaller screens */
+    @media (max-width: 768px) {
+      .partnership-container {
+        font-size: 1.5rem;
+        /* Adjust font size for mobile */
+      }
+    }
+
+    .blog-section {
+      margin: 50px auto;
+      max-width: 900px;
+    }
+
+    .blog-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+    }
+
+   
+    
+
+    .project-name {
+      position: relative;
+      color: black;
+      transition: all 0.3s ease;
+      /* Smooth transition */
+    }
+
+    .project-name::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      /* Position of underline */
+      left: 0;
+      background-color: orange;
+      /* Underline color */
+      transition: width 0.3s ease;
+      /* Smooth underline effect */
+    }
+
+    .project-name:hover::after {
+      width: 100%;
+      /* Full-width underline on hover */
+    }
+
+    .slide-in {
+      animation: slideIn 3.5s ease-in-out forwards;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .slide-in-right {
+      animation: slideInRight 3.5s ease-in-out forwards;
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .box-shadow {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .box-shadow:hover {
+      transform: scale(1.05);
+    }
+
+    .img-fluid {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .img-fluid:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid" style="margin-bottom: 20px;">
+      <a class="navbar-brand" href="navbar.html"><img src="images/trishokalogonobg.png" width="70px" /></a>
+      <div class="text-center navbar-text">
+        <h1 class="mb-2">TRISHOKA</h1>
+        <p class="mb-0">Digital Services</p>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="margin-left:10%;">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: whitesmoke;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partnerships.html">Partnership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Blog.html">Blogs</a>
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="culture.html">Culture</a>
+            </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="careers.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div>
+    <h1 class="partnership-container">
+      </h1>
+  </div>
+
+  <div style="padding-top: 30px;">
+    <div>
+      <u>
+        <h2
+          style="font-family: Georgia, 'Times New Roman', Times, serif;text-align: center;color:#B87333;text-decoration: underline;">
+          We are
+          Intoducing Our Technologies</h2>
+      </u>
+    </div>
+
+    <div style="margin-top: 60px;">
+
+      <div class="container mt-3 box-shadow" style="margin-right: 0;padding-bottom: 30px;">
+        <div class="row justify-content-center">
+          <div class="col-md-8 d-flex text-black p-3 align-items-center slide-in-right"
+            style="border-radius: 20px; font-family: Georgia, 'Times New Roman', Times, serif; background-color:white;border: 0.5px solid #B87333;">
+            <div>
+              <img src="images/digitalblog1.jpg" class="img-fluid"
+                style="border-radius: 10px; width: 900px; height: 200px;" />
+            </div>
+            <div class="pl-4">
+              <h4 style="font-size: 40px;">Digital Marketing</h4>
+              <span>Digital marketing involves promoting products or services using online platforms like social media,
+                search engines, and email. It helps businesses reach their target audience, boost brand awareness, and
+                drive sales. Key tactics include SEO, content marketing, and paid advertising.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container box-shadow" style="margin-left: 0;">
+        <div class="row justify-content-center">
+          <div class="col-md-8 d-flex text-black p-3 align-items-center slide-in"
+            style="border-radius: 20px; font-family: Georgia, 'Times New Roman', Times, serif; background-color:rgb(245, 240, 240);border: 0.5px solid #B87333;">
+            <div>
+              <img src="https://www.webdevelopmenthelp.net/wp-content/uploads/2015/09/Advantages-of-HTML5-and-CSS3.png"
+                class="img-fluid" style="border-radius: 10px; width: 800px; height: 200px;" />
+            </div>
+            <div class="pl-4" style="padding-left: 40px;">
+              <h4 style="font-size: 40px;">HTML5 & CSS3</h4>
+              <span>HTML5 is the latest version of the markup language used to structure web content, introducing
+                semantic elements for better accessibility. CSS3 is the latest version of Cascading Style Sheets,
+                enabling advanced styling options like animations, transitions, and gradients.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-3 box-shadow" style="margin-right: 0;">
+        <div class="row justify-content-center">
+          <div class="col-md-8 d-flex bg-white text-black p-3 align-items-center slide-in-right"
+            style="border-radius: 20px; font-family: Georgia, 'Times New Roman', Times, serif;border: 0.5px solid #B87333;">
+            <div>
+              <img
+                src="data:image/png;base64,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"
+                class="img-fluid" style="border-radius: 10px; width: 900px; height: 200px;" />
+            </div>
+            <div class="pl-4" style="padding-left: 40px;">
+              <h4 style="font-size: 40px;">Django</h4>
+              <span>Django is a high-level Python web framework that promotes rapid development and clean, pragmatic
+                design. It follows the "batteries-included" philosophy, providing built-in features like authentication,
+                URL routing, and an admin interface. Django encourages the use of the Model-View-Template (MVT)
+                architecture.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-3 box-shadow" style="margin-left: 0;">
+        <div class="row justify-content-center">
+          <div class="col-md-8 d-flex text-black p-3 align-items-center slide-in"
+            style="border-radius: 20px; font-family: Georgia, 'Times New Roman', Times, serif;background-color:rgb(245, 240, 240);border: 0.5px solid #B87333;">
+            <div>
+              <img src="https://www.softwarecraftsperson.com/images/react-js.jpg" class="img-fluid"
+                style="border-radius: 10px; width: 800px; height: 200px;" />
+            </div>
+            <div class="pl-4" style="padding-left: 40px;">
+              <h4 style="font-size: 40px;">React JS</h4>
+              <span>ReactJS is a popular JavaScript library developed by Facebook, used for building user interfaces,
+                especially for single-page applications. It allows developers to create large web applications that can
+                update and render efficiently in response to changing data.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-3 box-shadow" style="margin-right: 0;">
+        <div class="row justify-content-center">
+          <div class="col-md-8 d-flex text-black p-3 align-items-center slide-in-right"
+            style="border-radius: 20px; font-family: Georgia, 'Times New Roman', Times, serif; background-color:white;border: 0.5px solid #B87333;">
+            <div>
+              <img src="https://www.searchenginejournal.com/wp-content/uploads/2019/04/the-seo-guide-to-angular.png"
+                class="img-fluid" style="border-radius: 10px; width: 900px; height: 200px;" />
+            </div>
+            <div class="pl-4" style="padding-left: 40px;">
+              <h4 style="font-size: 40px;">Angular</h4>
+              <span>Angular is a platform and framework for building single-page client applications using HTML and
+                TypeScript. It was developed and is maintained by Google and is designed to make web development more
+                structured and efficient by following a component-based architecture.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-3 box-shadow" style="margin-left: 0;">
+        <div class="row justify-content-center">
+          <div class="col-md-8 d-flex text-black p-3 align-items-center slide-in"
+            style="border-radius: 20px; font-family: Georgia, 'Times New Roman', Times, serif; background-color:rgb(245, 240, 240);border: 0.5px solid #B87333;">
+            <div>
+              <img src="images/uipage.jpeg"
+                class="img-fluid" style="border-radius: 10px; width: 700px; height: 200px;" />
+            </div>
+            <div class="pl-4" style="padding-left: 40px;">
+              <h4 style="font-size: 40px;">UI/UX Designer</h4>
+              <span>While UI focuses on the interface and aesthetic presentation, UX is about crafting a seamless
+                experience from start to finish, ensuring that the user’s journey through the product is logical,
+                intuitive, and enjoyable.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <footer class="text-light py-4 w-100" style="background-color:#B87333; margin-top: 20px;height: 187px;">
+    <div class="container">
+      <div class="row">
+        <!-- About Company -->
+        <div class="col-md-3 col-sm-6 footer-col">
+          <h5 class="project-name" style="color:rgb(60, 56, 56);; font-family: Georgia, 'Times New Roman', Times, serif;">Company</h5>
+          <p style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">TRISHOKA <br> Digital Services</p>
+        </div>
+  
+        <!-- Services Section -->
+        <div class="col-md-3 col-sm-6 footer-col" style="line-height: 2rem;">
+          <h5 class="project-name" style="color:rgb(60, 56, 56);; font-family: Georgia, 'Times New Roman', Times, serif;">Our Services</h5>
+          <span style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">Web Development</span><br>
+          <span style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">Mobile App Development</span><br>
+          <span style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">Digital Marketing</span>
+        </div>
+  
+        <!-- Contact Details -->
+        <div class="col-md-3 col-sm-6 footer-col">
+          <h5 class="project-name" style="color:rgb(60, 56, 56); font-family: Georgia, 'Times New Roman', Times, serif;">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;"><strong style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">Email:</strong> trishokadigiservices@gmail.com</li>
+            <li style="color: whitesmoke;"><strong style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">Phone:</strong>+91 95505 90693</li>
+          </ul>
+        </div>
+  
+        <!-- Address -->
+        <div class="col-md-3 col-sm-6 footer-col">
+          <h5 class="project-name" style="color:rgb(60, 56, 56); font-family: Georgia, 'Times New Roman', Times, serif;">Address</h5>
+          <address style="color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif;">
+            Off. No: 1014, 10th Floor, Prajay Princeton
+            Towers,<br>
+            Saroornagar, L.B. Nagar, Hyderabad - 500074
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script>
+    window.addEventListener('load', function () {
+      // Move the navbar into view from the top
+      document.querySelector('.navbar').style.top = '0';
+    });
+  </script>
+</body>
+
+</html>
